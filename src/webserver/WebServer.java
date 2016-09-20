@@ -25,10 +25,7 @@ public class WebServer
         int ch;
         while((ch=finput.read())!=-1)
         {
-           
-                System.out.print((char)ch);
-           
-        
+            System.out.print((char)ch);
         }
     }
     
@@ -40,8 +37,6 @@ public class WebServer
         acceptRequests();
         
     }
-    
-    
     
     private void acceptRequests() throws Exception
     {
@@ -56,6 +51,4 @@ public class WebServer
             
         }
     }
-
-
 }
