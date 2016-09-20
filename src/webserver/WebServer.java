@@ -9,14 +9,12 @@ import java.net.*;
  */
 public class WebServer 
 {
-
     ServerSocket serverSocket;
     
     public static void main(String[] args) throws Exception 
     {
         readConfig();
         //new WebServer().runServer();
-        
     }
         
     private static void readConfig() throws Exception
@@ -35,7 +33,6 @@ public class WebServer
         
         //for accepting requests
         acceptRequests();
-        
     }
     
     private void acceptRequests() throws Exception
