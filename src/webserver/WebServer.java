@@ -11,7 +11,7 @@ public class WebServer {
     ServerSocket serverSocket;
     
     public static void main(String[] args) throws Exception {
-        //readConfig();
+//        readConfig();
         new WebServer().runServer();
     }
         
