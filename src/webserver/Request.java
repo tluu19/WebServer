@@ -6,8 +6,7 @@ package webserver;
  */
 public class Request 
 {
-    public Request(String request)
-    {
+    public Request(String request){
         
     }
     

@@ -8,8 +8,7 @@ public class Response
 {
     Request req;
     
-    public Response(Request request)
-    {
+    public Response(Request request){
         req = request;
     }
     

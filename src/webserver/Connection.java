@@ -7,8 +7,7 @@ import java.net.*;
  * @author Thao
  */
 //handles all the connection that contains requests
-public class Connection extends Thread
-{
+public class Connection extends Thread {
     Socket s;
     
     //sending the output to client
@@ -17,8 +16,7 @@ public class Connection extends Thread
     //getting the input from client
     BufferedReader br;
     
-    public Connection(Socket s) throws Exception
-    {
+    public Connection(Socket s) throws Exception{
         this.s = s;
         br = new BufferedReader(new InputStreamReader(s.getInputStream()));
         pw = new PrintWriter(s.getOutputStream());
@@ -26,8 +24,7 @@ public class Connection extends Thread
     
     //read the request and give the response
     @Override
-    public void run()
-    {
+    public void run(){
         try {
             //get the request string and give this string to Request class
             String reqString = "";
@@ -42,8 +39,7 @@ public class Connection extends Thread
 
             // pass req obj to repsonse class for getting the response
             Response res = new Response(req);
-        } catch (Exception e) 
-        {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
